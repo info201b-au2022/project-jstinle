@@ -99,6 +99,7 @@ This data was collected on October 9, 2019 by Diana Lavery, a demographer, socio
 |---------------------------------------|----------------|--------------|
 | Student Loan Balances by Age by State | 52             | 15           |
 | PortfoliobyBorrowerLocationAge \*     | 15             | 3            |
+
 \* *There are 50 of these data files, one per each state in the United States*
 
 *LINK:* [https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=38.995091%2C-112.206293%2C4.52&showTable=true](full citation in references)
