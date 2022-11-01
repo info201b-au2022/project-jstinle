@@ -73,7 +73,7 @@ High-ranking members (vice presidents, administrators, research officers, and ec
 
 *LINK:* [Data.world Student Loan Debt](https://data.world/finance/student-loan-debt) (full citation in references)
 
-**Dataset 2: Statista Student Loan Forgiveness
+**Dataset 2: Statista Student Loan Forgiveness**
 
 This dataset addresses the conflicts that many have regarding student loan forgiveness, it shows how student loan debt is continuing to rise but at the same time applications for student loan forgiveness are at the highest it's ever been as well. The data shows that more and more applications are being submitted, and while the application rate is booming, the acceptance rate is very slowly increasing in comparison to the denial rate. This then brings up the problem that as a nation, the student debt is not getting better, it is getting worse and there is not enough loan forgiveness acts put in place.
 
@@ -89,7 +89,7 @@ This data was collected by Melanie Hanson, she is an educator, research analyst 
 *LINK:* [https://educationdata.org/student-loan-forgiveness-statistics] Hanson, Melanie. “Student Loan Forgiveness Statistics” EducationData.org, January 1, 2022,
 https://educationdata.org/student-loan-forgiveness-statistics
 
-**Dataset 3: Kaggle Student Loan Averages 
+**Dataset 3: Kaggle Student Loan Averages**
 
 This dataset highlights how much student loan debt is outstanding within a sample population in age groups of under 24 years, 24-34 years, 35-49 years, 50-61, and 62 years and over. This dataset also organizes the data geographically by state within the U.S. This is relevant to our research because we can analyze the amount of debt over the course of time and infer on which factors are contributing to higher or lower amounts of debt. Using this dataset, we can observe and estimate future loan trends and whether a loan relief plan would be plausible or effective. With the intersectionality of geography and age group, we can analyze patterns of loans across states and ages and make projections on loan debt in future years. Additionally, we can refer back to these datasets and analyze any changes if a loan forgiveness program was implemented. 
 
@@ -98,8 +98,8 @@ This data was collected on October 9, 2019 by Diana Lavery, a demographer, socio
 |                                       | Number of Rows | # of columns |
 |---------------------------------------|----------------|--------------|
 | Student Loan Balances by Age by State | 52             | 15           |
-| PortfoliobyBorrowerLocationAge *      | 15             | 3            |
-* *There are 50 of these data files, one per each state in the United States*
+| PortfoliobyBorrowerLocationAge +      | 15             | 3            |
++ *There are 50 of these data files, one per each state in the United States*
 
 *LINK:* [https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=38.995091%2C-112.206293%2C4.52&showTable=true](full citation in references)
 
