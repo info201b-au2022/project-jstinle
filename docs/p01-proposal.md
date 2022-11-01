@@ -71,6 +71,8 @@ High-ranking members (vice presidents, administrators, research officers, and ec
 | Home Secured Debt Age 30 | 12             | 4            |
 | Non-Mortgage Debt Types  | 44             | 6            |
 
+*This data is stored in the data folder of this repository.*
+
 *LINK:* [Data.world Student Loan Debt](https://data.world/finance/student-loan-debt) (full citation in references)
 
 **Dataset 2: Statista Student Loan Forgiveness**
@@ -86,6 +88,8 @@ This data was collected by Melanie Hanson, she is an educator, research analyst 
 | TEPSLF Progress (Prior to Nov. 30, 2020) | 8              | 2            |
 | ED’s Borrower Defense Progress           | 19             | 3            |
 
+*This data is not available in CSV form. These are accessed as photos of graphics (charts, tables, etc.) on the provided website below.*
+
 *LINK:* [https://educationdata.org/student-loan-forgiveness-statistics] Hanson, Melanie. “Student Loan Forgiveness Statistics” EducationData.org, January 1, 2022,
 https://educationdata.org/student-loan-forgiveness-statistics
 
@@ -100,7 +104,8 @@ This data was collected on October 9, 2019 by Diana Lavery, a demographer, socio
 | Student Loan Balances by Age by State | 52             | 15           |
 | PortfoliobyBorrowerLocationAge \*     | 15             | 3            |
 
-\* *There are 50 of these data files, one per each state in the United States, which are not available in CSV form and will only be used if necessary. These are accessed by clicking each state on the map interface on the provided website below.*
+*The first data file (balances by age by state) is stored in the data folder of this repository.   
+\*There are 50 of these data files, one per each state in the United States, which are not available in CSV form. These are accessed by clicking each state on the map interface on the provided website below, which provides a table of values.*
 
 *LINK:* [https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=38.995091%2C-112.206293%2C4.52&showTable=true](full citation in references)
 
