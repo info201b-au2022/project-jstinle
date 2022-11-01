@@ -36,7 +36,14 @@ While student loan debt continues to skyrocket year after year, the number of st
 
 ### Problem Domain
 
-TBD!
+As student debt continues to rise, the government is trying solutions to relieve debts based on income-based needs. However, there are several internal and environmental factors to consider and concerns that should be accounted for. First, the loaning system itself – where interest is compounded exponentially even as students are paying off their loans, which can create unaffordable debts many people can’t afford to pay back. Secondly, governmental solutions have both benefits and unintended negative consequences that can relieve student loans and also be exploited by unintended parties; the two main solutions to date include Biden’s newest relief plan to cover up to $20,000 federally held loans to eligible income brackets and Pell grants to eligible students (Coy, 2022). Additionally, there may be more efficient ways to help students with their debts, but the ethics of data collection for these purposes may limit efficiency. Finally, we must consider the stakeholders that include, but are not limited to students, taxpayers, government (Department of Education in particular), schools/universities that control tuition costs, and opponents of Biden’s relief plan. 
+Addressing the direct stakeholders, the high interest rates on student loans can pressure borrowers into lending more over time, contributing to increasing debt as it’s paid off and affects mostly low-income and minority groups. Privatization of loaning services and private lenders also creates an advantage for lenders, an indirect stakeholder, to exploit borrowers for profit, making the process difficult and contributing to the compounding student debt in the U.S. (Herd, 2022). The Biden administration, a direct stakeholder as the source of debt relief,  is attempting to subsidize costs of higher education for eligible students using the pandemic’s emergent crisis as the catalyst for this program. This plan has met tension with opponents such as taxpayers and other indirect stakeholders, citing this plan will create unintended consequences.
+An unintended consequence that benefits higher income students but strains government resources and at times, lower income students is the incentive to spend more recklessly knowing there is a government subsidized safety net. This can cost taxpayers in the long run (estimated $379 billion in cost over 30 years), drain the government of funding resources, and contribute to inflation as borrowers have more to spend. An example of a failed relief program is the Federal Family Education Loan (FFEL) that suddenly changed its policy, cutting many eligible borrowers from receiving aid (Lieber, 2022). This exemplifies another disparity between federal loan borrowers and those who borrow under third-party loans, a result of confusing loan policies and unequal loan systems. 
+Another consequence of an income-based eligibility system is the disparity between post-grad income that can cut certain major groups out of eligibility due to higher salaries as opposed to lower salary jobs that still qualify for the relief’s income bracket. 
+Reviewing eligibility can be made easier for students and benefit a greater number of students through the Department of Education’s acquisition of IRS data, but would bring an ethical dilemma of public privacy.
+Benefits to solutions to relieve student debt first and foremost give borrowers a chance
+to relieve debt and that would otherwise be compounded by covering remaining balance (Herd, 2022) through Biden’s debt forgiveness program, and the Pell grant aids the most affected groups. Furthermore, the government is not giving out money, only reducing the debt of borrowers, which makes eligibility fraud minor and the benefit for borrowers major. Additionally, the application of the program is simple and digitized (contrary to most government forms), giving borrowers greater accessibility and setting a positive precedent for future government forms.
+
 
 ### Research Questions
 
@@ -52,6 +59,8 @@ Over time the national student loan debt can be seen surging to record levels ev
 
 This dataset specifically targets different levels of and prevalence of borrowers of student loans per different groups such as loans per age group or frequency by levels of debt. This will help us understand if age plays a role in the repayment of loans, how long this problem has prevailed, and the effect of student debt on other personal economic situations.
 
+High-ranking members (vice presidents, administrators, research officers, and economists) of the Federal Reserve Bank of New York’s Research and Statistics Group conducted the research due to the, at the time, increased attention by policymakers and the media. The data collected was taken from the bank’s Consumer Credit Panel and anonymized Equifax credit data; so it follows that it is sponsored by their respective corporations. Since this data was recorded and analyzed directly by affiliate banks, it is safe to assume that the data is secure, credible, and trustworthy. We obtained the data through the google dataset search and credited Data.world, the website that makes the datasets accessible.
+
 |                          | Number of Rows | # of columns |
 |--------------------------|----------------|--------------|
 | Balance by Age           | 11             | 7            |
@@ -61,11 +70,11 @@ This dataset specifically targets different levels of and prevalence of borrower
 
 *LINK:* [Data.world Student Loan Debt](https://data.world/finance/student-loan-debt) (full citation in references)
 
-High-ranking members (vice presidents, administrators, research officers, and economists) of the Federal Reserve Bank of New York’s Research and Statistics Group conducted the research due to the, at the time, increased attention by policymakers and the media. The data collected was taken from the bank’s Consumer Credit Panel and anonymized Equifax credit data; so it follows that it is sponsored by their respective corporations. Since this data was recorded and analyzed directly by affiliate banks, it is safe to assume that the data is secure, credible, and trustworthy. We obtained the data through the google dataset search and credited Data.world, the website that makes the datasets accessible.
-
-**Dataset 2: Statista Student Loan Forgiveness**
+**Dataset 2: Statista Student Loan Forgiveness
 
 This dataset addresses the conflicts that many have regarding student loan forgiveness, it shows how student loan debt is continuing to rise but at the same time applications for student loan forgiveness are at the highest it's ever been as well. The data shows that more and more applications are being submitted, and while the application rate is booming, the acceptance rate is very slowly increasing in comparison to the denial rate. This then brings up the problem that as a nation, the student debt is not getting better, it is getting worse and there is not enough loan forgiveness acts put in place.
+
+This data was collected by Melanie Hanson, she is an educator, research analyst and the senior editor for the Education Data Initiative. The data was collected up to November 30th, 2020 to show how much student loans have been forgiven and what types were forgiven the most. The research is not funded by any third parties, and is conducted by an organization that takes donations. Students fighting for more loan forgiveness can be benefitted, as well as policymakers in understanding the statistics behind student loan forgiveness in order to create bills regarding this topic. The data can be assumed that it is trustworthy because it is data collected from government websites and it is stated that all their data is fact checked. I obtained this data by looking up datasets on student loan forgiveness and have credited educationdata.org for making it accessible to find this information.
 
 |                                          | Number of Rows | # of columns |
 |------------------------------------------|----------------|--------------|
@@ -74,9 +83,22 @@ This dataset addresses the conflicts that many have regarding student loan forgi
 | TEPSLF Progress (Prior to Nov. 30, 2020) | 8              | 2            |
 | ED’s Borrower Defense Progress           | 19             | 3            |
 
-*LINK:* [https://educationdata.org/student-loan-forgiveness-statistics] 
+*LINK:* [https://educationdata.org/student-loan-forgiveness-statistics] Hanson, Melanie. “Student Loan Forgiveness Statistics” EducationData.org, January 1, 2022,
+https://educationdata.org/student-loan-forgiveness-statistics
 
-This data was collected by Melanie Hanson, she is an educator, research analyst and the senior editor for the Education Data Initiative. The data was collected up to November 30th, 2020 to show how much student loans have been forgiven and what types were forgiven the most. The research is not funded by any third parties, and is conducted by an organization that takes donations. Students fighting for more loan forgiveness can be benefitted, as well as policymakers in understanding the statistics behind student loan forgiveness in order to create bills regarding this topic. The data can be assumed that it is trustworthy because it is data collected from government websites and it is stated that all their data is fact checked. I obtained this data by looking up datasets on student loan forgiveness and have credited educationdata.org for making it accessible to find this information.
+**Dataset 3: Kaggle Student Loan Averages 
+
+This dataset highlights how much student loan debt is outstanding within a sample population in age groups of under 24 years, 24-34 years, 35-49 years, 50-61, and 62 years and over. This dataset also organizes the data geographically by state within the U.S. This is relevant to our research because we can analyze the amount of debt over the course of time and infer on which factors are contributing to higher or lower amounts of debt. Using this dataset, we can observe and estimate future loan trends and whether a loan relief plan would be plausible or effective. With the intersectionality of geography and age group, we can analyze patterns of loans across states and ages and make projections on loan debt in future years. Additionally, we can refer back to these datasets and analyze any changes if a loan forgiveness program was implemented. 
+
+This data was collected on October 9, 2019 by Diana Lavery, a demographer, sociologist, and economics practitioner with over 10 years of experience. She is a senior engineer at ArcGIS Living Atlas and published many datasets and articles. For this dataset, she sourced her information from Enterprise Data Warehouse of Federal Student Aid, an office of the U.S. Department of Education and included different types of loans including Direct Loans, Federal Family Education Loans, and Perkins Loans, including principal and outstanding interest within her data. The data is likely informational and benefits borrowers or interested audiences in being more informed, but not exploitative. This dataset is also licensed under Esri Master License and is trustworthy as all the data sets and information come directly from government records. 
+
+|                                       | Number of Rows | # of columns |
+|---------------------------------------|----------------|--------------|
+| Student Loan Balances by Age by State | 52             | 15           |
+| PortfoliobyBorrowerLocationAge *      | 15             | 3            |
+* *There are 50 of these data files, one per each state in the United States*
+
+*LINK:* [https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=38.995091%2C-112.206293%2C4.52&showTable=true](full citation in references)
 
 ### Expected Implications
 
@@ -88,14 +110,18 @@ Based on the amount of data we have, it will be difficult to obtain the *cause* 
 
 ### Acknowledgements
 
-Thanks to Shiina for being so helpful!
+N/A
 
 ### References
 
 Brown, Meta, et al. Student Loan Landscape Data. 2015. Federal Reserve Bank of New York [producer]. Data.world [distributor], 2016. Web. 31 October 2022. https://data.world/finance/student-loan-debt
+Coy, P. (2022, September 26). Biden's student loan plan has issues. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/09/26/opinion/biden-student-loan-forgiveness.html?searchResultPosition=9
+Herd, P., & Moynihan, D. P. (2022, October 23). Turns out sometimes the government can get things right. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/23/opinion/student-loan-debt-relief-application-process.html?searchResultPosition=10
+Lavery, D. (2019, October 19). Student loan balances by age by State. Living Atlas of the World. (n.d.). Retrieved October 31, 2022, from https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=36.536139%2C-112.206293%2C4.52&amp;showTable=true 
+Lieber, R. (2022, October 15). The student loan borrowers who keep missing out on relief. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/15/your-money/ffel-student-loan-relief.html?searchResultPosition=1
+Liptak, A. (2022, October 20). Courts reject challenges to Biden Plan on student debt. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/20/us/politics/supreme-court-student-loan-forgiveness.html 
 
-Hanson, Melanie. “Student Loan Forgiveness Statistics” EducationData.org, January 1, 2022, https://educationdata.org/student-loan-forgiveness-statistics
 
 ### Appendix A: Questions
 
-Are the tables in the dataset section just meant to represent the number of rows and columns? We found the wording a little ambiguous and weren't sure if we were meant to put the entire dataset or just the rows/columns in.
+N/A
