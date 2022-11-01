@@ -98,8 +98,8 @@ This data was collected on October 9, 2019 by Diana Lavery, a demographer, socio
 |                                       | Number of Rows | # of columns |
 |---------------------------------------|----------------|--------------|
 | Student Loan Balances by Age by State | 52             | 15           |
-| PortfoliobyBorrowerLocationAge +      | 15             | 3            |
-+ *There are 50 of these data files, one per each state in the United States*
+| PortfoliobyBorrowerLocationAge \*     | 15             | 3            |
+\* *There are 50 of these data files, one per each state in the United States*
 
 *LINK:* [https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=38.995091%2C-112.206293%2C4.52&showTable=true](full citation in references)
 
@@ -118,10 +118,15 @@ N/A
 ### References
 
 Brown, Meta, et al. Student Loan Landscape Data. 2015. Federal Reserve Bank of New York [producer]. Data.world [distributor], 2016. Web. 31 October 2022. https://data.world/finance/student-loan-debt  
+
 Coy, P. (2022, September 26). Biden's student loan plan has issues. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/09/26/opinion/biden-student-loan-forgiveness.html?searchResultPosition=9   
+
 Herd, P., & Moynihan, D. P. (2022, October 23). Turns out sometimes the government can get things right. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/23/opinion/student-loan-debt-relief-application-process.html?searchResultPosition=10   
+
 Lavery, D. (2019, October 19). Student loan balances by age by State. Living Atlas of the World. (n.d.). Retrieved October 31, 2022, from https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=36.536139%2C-112.206293%2C4.52&amp;showTable=true   
+
 Lieber, R. (2022, October 15). The student loan borrowers who keep missing out on relief. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/15/your-money/ffel-student-loan-relief.html?searchResultPosition=1   
+
 Liptak, A. (2022, October 20). Courts reject challenges to Biden Plan on student debt. The New York Times. Retrieved October 31, 2022, from https://www.nytimes.com/2022/10/20/us/politics/supreme-court-student-loan-forgiveness.html    
 
 ### Appendix A: Questions
