@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyverse)
 
 #load datasets
-balance_borrows_per_ages <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/Student_Loan_Balances_by_Age_by_State.csv")
+balance_borrows_per_ages <- read.csv("../data/Student_Loan_Balances_by_Age_by_State.csv")
 
 ages <- c("18-29", "30-44", "45-59", "60+")
 bachelor_percentage <- c("60", "59", "48", "29")
