@@ -1,16 +1,29 @@
+<<<<<<< HEAD
 Debt_Distr <- read.csv("https://query.data.world/s/a7nl2auw5ij7tqwmqr52ymsqluqnv3")
 #View(Debt_Distr)
+=======
+#Importing debt distribution data into a dataframe
+Debt_Distr <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/debt_amt_distribution2014.csv")
+View(Debt_Distr)
+>>>>>>> refs/remotes/origin/main
 
 Num_Borrow <- c(Debt_Distr$NumberOfBorrowers)
 
 Group <- c("<$5001", "$5000-$10000", "$10000-$25000", "$25000-$50000", "$50000-$75000", 
            "$75000-$100000", "$100000-$150000", "$150000-$200000", "$200000+")
 
+<<<<<<< HEAD
 Visual1 <- barplot((Num_Borrow),
+=======
+#Creating a barplot showing how many number of borrowers there are for each group of loans
+
+barplot((Num_Borrow),
+>>>>>>> refs/remotes/origin/main
         names.arg = Group,
         title(main = "Debt Distribution in 2014",
         xlab = "Debt Balance in 2014",
         ylab = "Number of Borrowers"))
+
 
 
 
