@@ -1,4 +1,4 @@
-Debt_Distr <- read.csv("https://query.data.world/s/a7nl2auw5ij7tqwmqr52ymsqluqnv3")
+Debt_Distr <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/debt_amt_distribution2014.csv")
 View(Debt_Distr)
 
 Num_Borrow <- c(Debt_Distr$NumberOfBorrowers)
@@ -11,6 +11,7 @@ barplot((Num_Borrow),
         title(main = "Debt Distribution in 2014",
         xlab = "Debt Balance in 2014",
         ylab = "Number of Borrowers"))
+
 
 
 

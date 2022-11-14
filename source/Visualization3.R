@@ -1,13 +1,13 @@
 library(tidyverse)
-loan_agestate <- read.csv("https://livingatlas-dcdev.opendata.arcgis.com/datasets/UrbanObservatory::student-loan-balances-by-age-by-state/explore?location=36.882087%2C-112.206293%2C4.52&showTable=true")
+loan_agestate <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/Student_Loan_Balances_by_Age_by_State.csv")
 View(loan_agestate)
 
 Locations<- c(loan_agestate$Location)
 
-visual3 <- loan_agestate %>%
+loan_agestate %>%
   ggplot(aes(x = borrowers_LE24,
              y = dollars_LE24,
-             colour = Location)) +
+             colour = Location))+
   geom_point()+
   geom_smooth(method = lm,
               se = F)+
@@ -15,8 +15,4 @@ visual3 <- loan_agestate %>%
        y = "Dollars Owed (Billions)",
        title = "Student Loans Owed By Those Less Than 24 Years Old In Each State")+
   theme_minimal()
-
-
-print(visual3)
-
 
