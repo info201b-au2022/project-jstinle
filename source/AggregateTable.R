@@ -78,6 +78,7 @@ outstanding <- as.numeric(outstanding[1,])
 
 
 borrowers_outstanding <- data.frame(ages, borrowers, outstanding ) %>%
+  mutate(outstanding = round(outstanding, 2)) %>%
   rename("Approximate Ages" = ages, 
          "Approximate Number of Borrowers" = borrowers, 
          "Amount of Unpaid Loans (in billions of USD" = outstanding)
