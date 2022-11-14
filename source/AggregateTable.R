@@ -61,7 +61,7 @@ borrowers <- borrowers_outstanding %>%
          borrowers_35_49 = NULL,
          borrowers_50_61 = NULL,
          borrowers_GE62 = NULL)
-borrowers <- as.numeric(borrowers[1,])
+borrowers <- trunc(as.numeric(borrowers[1,]) * 1000)
 
 outstanding <- borrowers_outstanding %>%
   select(contains("dollars")) %>%
@@ -79,12 +79,8 @@ outstanding <- as.numeric(outstanding[1,])
 
 borrowers_outstanding <- data.frame(ages, borrowers, outstanding ) %>%
   rename("Approximate Ages" = ages, 
-         "Number of Borrowers (in thousands)" = borrowers, 
+         "Approximate Number of Borrowers" = borrowers, 
          "Amount of Unpaid Loans (in billions of USD" = outstanding)
-View(borrowers_outstanding)
-
-
-View(borrowers_outstanding)
 
 percentage_debt <- percentage_debt %>%
   mutate("Approximate Ages" = c("Under 30", "30 to 50", "50 to 60", "Above 60")) %>%
@@ -96,3 +92,4 @@ percentage_debt <- percentage_debt %>%
 aggregate_table <- borrowers_outstanding %>%
   full_join(average_balance) %>%
   full_join(percentage_debt)
+View(aggregate_table)
