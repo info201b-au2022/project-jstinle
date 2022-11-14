@@ -1,5 +1,8 @@
 library(tidyverse)
 
+#Manually importing the data into a dataframe because our data does not have a 
+#csv file to import as.
+
 claim_approved <- c("6943","5830","5069","4444","4263","4012","3697",
                     "3376","3174","2828","2544")
 claim_denied <- c("263118","213535","205744","198662","192323","187142","187053",
@@ -10,8 +13,7 @@ month <- c("2020 11", "2020 10", "2020 09", "2020 08","2020 07", "2020 06", "202
            "2020 04", "2020 03", "2020 02", "2020 01")
 claimchart<- data.frame(month, claim_denied, claim_pending, claim_approved)
 
-
-
+#Creating a Line chart, with red being denied claims, green as approved and blue as pending.
 ggplot(data = claimchart, mapping = aes(x = month))+
   geom_line(data = claimchart, mapping = aes(x = month, y = claim_denied, group = 1), color="red")+
   geom_point(data = claimchart, mapping = aes(x = month, y = claim_denied, group = 1), color="red")+

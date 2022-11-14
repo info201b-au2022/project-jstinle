@@ -1,8 +1,13 @@
 library(tidyverse)
+
+#Importing data into a dataframe.
 loan_agestate <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/Student_Loan_Balances_by_Age_by_State.csv")
 View(loan_agestate)
 
 Locations<- c(loan_agestate$Location)
+
+#Creating a scatterplot, with each color representing a state.
+#Showing how number of borrowers relates to dollars owed.
 
 loan_agestate %>%
   ggplot(aes(x = borrowers_LE24,
