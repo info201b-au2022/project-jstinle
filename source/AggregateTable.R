@@ -93,4 +93,3 @@ percentage_debt <- percentage_debt %>%
 aggregate_table <- borrowers_outstanding %>%
   full_join(average_balance) %>%
   full_join(percentage_debt)
-View(aggregate_table)
