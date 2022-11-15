@@ -81,12 +81,14 @@ This dataset addresses the conflicts that many have regarding student loan forgi
 
 This data was collected by Melanie Hanson, she is an educator, research analyst and the senior editor for the Education Data Initiative. The data was collected up to November 30th, 2020 to show how much student loans have been forgiven and what types were forgiven the most. The research is not funded by any third parties, and is conducted by an organization that takes donations. Students fighting for more loan forgiveness can be benefitted, as well as policymakers in understanding the statistics behind student loan forgiveness in order to create bills regarding this topic. The data can be assumed that it is trustworthy because it is data collected from government websites and it is stated that all their data is fact checked. I obtained this data by looking up datasets on student loan forgiveness and have credited educationdata.org for making it accessible to find this information.
 
-|                                          | Number of Rows | # of columns |
-|------------------------------------------|----------------|--------------|
-| PSLF Progress (Since Nov. 30, 2020)      | 3              | 3            |
-| PSLF Progress (Prior to Nov. 30, 2020)   | 15             | 3            |
-| TEPSLF Progress (Prior to Nov. 30, 2020) | 8              | 2            |
-| ED’s Borrower Defense Progress           | 19             | 3            |
+|                                                               | Number of Rows | # of columns |
+|---------------------------------------------------------------|----------------|--------------|
+| PSLF Progress (Since Nov. 30, 2020)                           | 3              | 3            |
+| PSLF Progress (Prior to Nov. 30, 2020)                        | 15             | 3            |
+| TEPSLF Progress (Prior to Nov. 30, 2020)                      | 8              | 2            |
+| ED’s Borrower Defense Progress                                | 19             | 3            |
+| Teacher Loan Forgiveness Program Dollars Discharged Over Time | 11             | 2            |
+| Educational Debt Among Post-Secondary-Educated Adults         | 5              | 4            |
 
 *This data is not available in CSV form. These are accessed as photos of graphics (charts, tables, etc.) on the provided website below.*
 
