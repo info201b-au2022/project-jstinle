@@ -9,12 +9,11 @@ Group <- c("<$5001", "$5000-$10000", "$10000-$25000", "$25000-$50000", "$50000-$
 
 #Creating a barplot showing how many number of borrowers there are for each group of loans
 
-barplot((Num_Borrow),
-        names.arg = Group,
-        title(main = "Debt Distribution in 2014",
-        xlab = "Debt Balance in 2014",
-        ylab = "Number of Borrowers"))
-
-
-
-
+Debt_Distr %>% ggplot(aes(x = Balance2014, y = NumberOfBorrowers))+
+  geom_col(aes(fill = Balance2014))+
+  scale_x_discrete(breaks = function(x){x[c(TRUE, FALSE)]})+
+  scale_y_discrete(breaks = function(y){y[c(TRUE, FALSE)]})+
+        labs(title = "Debt Distribution in 2014",
+        x = "Debt Balance in 2014",
+        y = "Number of Borrowers") +
+  theme_minimal()
