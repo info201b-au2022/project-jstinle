@@ -2,7 +2,7 @@ library(tidyverse)
 
 
 #Importing data into a dataframe.
-loan_agestate <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/Student_Loan_Balances_by_Age_by_State.csv")
+loan_agestate <- read.csv("../data/Student_Loan_Balances_by_Age_by_State.csv")
 
 Locations<- c(loan_agestate$Location)
 

@@ -15,7 +15,7 @@ graduate_percentage <- c("73", "68", "56", "36")
 percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage)
 View(percentage_debt)
 
-balances <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/Student_Loan_Balances_by_Age_by_State.csv")
+balances <- read.csv("../data/Student_Loan_Balances_by_Age_by_State.csv")
 
 
 #summary function
