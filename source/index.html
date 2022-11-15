@@ -383,27 +383,61 @@ to 34 age group.</p>
 <!-- Age group above 60 years has the lowest amount of borrowers, overall unpaid debt, and bachelor or graduate degree holders but have the second highest average outstanding balance relative to other age groups. -->
 <!-- The age group 50 to 60 years has the greatest average debt balance per borrower but have less than half the number of borrowers compared to age group 30 to 50 years or borrowers under 30 years old. -->
 <!--Table-->
-<pre class="r"><code>aggregate_table</code></pre>
-<pre><code>##   Approximate Ages Approximate Number of Borrowers
-## 1         Under 30                          216713
-## 2         30 to 50                          209648
-## 3         50 to 60                           93615
-## 4         Above 60                           26101
-##   Amount of Unpaid Loans (in billions of USD Average Balance (in USD)
-## 1                                       5.92                 23924.46
-## 2                                       9.22                 38136.33
-## 3                                       3.89                 40600.07
-## 4                                       1.05                 40252.67
-##   Bachelor-Degree Havers in Debt (in percentage)
-## 1                                             60
-## 2                                             59
-## 3                                             48
-## 4                                             29
-##   Graduate-Degree Havers in Debt (in percentage)
-## 1                                             73
-## 2                                             68
-## 3                                             56
-## 4                                             36</code></pre>
+<pre class="r"><code>kable(aggregate_table)</code></pre>
+<table>
+<colgroup>
+<col width="8%" />
+<col width="15%" />
+<col width="20%" />
+<col width="11%" />
+<col width="22%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Approximate Ages</th>
+<th align="right">Approximate Number of Borrowers</th>
+<th align="right">Amount of Unpaid Loans (in billions of USD</th>
+<th align="right">Average Balance (in USD)</th>
+<th align="left">Bachelor-Degree Havers in Debt (in percentage)</th>
+<th align="left">Graduate-Degree Havers in Debt (in percentage)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Under 30</td>
+<td align="right">216713</td>
+<td align="right">5.92</td>
+<td align="right">23924.46</td>
+<td align="left">60</td>
+<td align="left">73</td>
+</tr>
+<tr class="even">
+<td align="left">30 to 50</td>
+<td align="right">209648</td>
+<td align="right">9.22</td>
+<td align="right">38136.33</td>
+<td align="left">59</td>
+<td align="left">68</td>
+</tr>
+<tr class="odd">
+<td align="left">50 to 60</td>
+<td align="right">93615</td>
+<td align="right">3.89</td>
+<td align="right">40600.07</td>
+<td align="left">48</td>
+<td align="left">56</td>
+</tr>
+<tr class="even">
+<td align="left">Above 60</td>
+<td align="right">26101</td>
+<td align="right">1.05</td>
+<td align="right">40252.67</td>
+<td align="left">29</td>
+<td align="left">36</td>
+</tr>
+</tbody>
+</table>
 <!--Chart 1-->
 <pre class="r"><code>#source(&quot;Visualization1.R&quot;)
 knitr::opts_chunk$set(echo = TRUE)
@@ -416,7 +450,6 @@ which debt range is on average the most common, that can be used to
 estimate plausible loan relief and the distribution of forgiveness funds
 should be allocated to accomodate borrowers.</p>
 <!--Chart 2-->
-<!--Chart 3-->
 <pre class="r"><code>source(&quot;Visualization3.R&quot;)
 knitr::opts_chunk$set(echo = FALSE)
 visual3</code></pre>

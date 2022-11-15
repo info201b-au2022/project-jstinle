@@ -10,6 +10,8 @@ source("AggregateTable.R")
 library(ggplot2)
 knitr::opts_chunk$set(echo = TRUE)
 source("SummaryInfo.R")
+library(knitr)
+library(ggplot2)
 ```
 
 <!--Dynamic Summary-->
@@ -37,7 +39,7 @@ The highest amount of debt from borrowers `r summary_info$highest_bachelor_debt`
 <!--Table-->
 
 ```{r table}
-aggregate_table
+kable(aggregate_table)
 ```
 
 <!--Chart 1-->
