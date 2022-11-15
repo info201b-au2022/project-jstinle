@@ -12,4 +12,4 @@
 
 ## Application Programming Interfaces (API)
 
-* **Student Loan Forgiveness Statistics API**. The _Education Data Initiative_ provides data for various statistics regarding student loans. These are stored as photos on this website: [Student Loan Forgiveness Statistics](https://educationdata.org/student-loan-forgiveness-statistics)They are accessible as graphics--most notably charts, tables, etc.-- on the provided website.
+* **Student Loan Forgiveness Statistics API**. The _Education Data Initiative_ provides data for various statistics regarding student loans. These are stored as photos on this website: [Student Loan Forgiveness Statistics](https://educationdata.org/student-loan-forgiveness-statistics). They are accessible as graphics--most notably charts, tables, etc.-- on the provided website.
