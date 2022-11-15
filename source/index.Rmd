@@ -4,6 +4,11 @@ author: "Karina Chan, Michelle Arquiza, Justin Le"
 date: "2022-11-14"
 output: html_document
 ---
+
+```{r setup, include=FALSE}
+source("AggregateTable.R")
+knitr::opts_chunk$set(echo = TRUE)
+```
 <!--Dynamic Summary-->
 ##Dynamic Summary 
 Write a summary paragraph that includes information calculated by your summary information function. 
@@ -23,16 +28,14 @@ The age group 50 to 60 years has the greatest average debt balance per borrower 
 
 <!--Table-->
 ```{r table}
-source("/source/AggregateTable.R")
-knitr::opts_chunk$set(echo = TRUE)
 aggregate_table
 ```
 
 <!--Chart 1-->
 ```{r chart 1}
-source("/source/Visualization1.R")
+#source("Visualization1.R")
 knitr::opts_chunk$set(echo = TRUE)
-Visual1
+#Visual1
 ```
 Analysis: The histogram of the debt distribution in 2014 is skewed right, where most borrowers have less than $75,000 in debt. The range of debt that is owed by the most borrowers is between $10,000-$25,000, and few owe more than $200,000. The purpose of this chart is to observe which debt range is on average the most common, that can be used to estimate plausible loan relief and the distribution of forgiveness funds should be allocated to accomodate borrowers. 
 
@@ -44,7 +47,7 @@ Analysis: The histogram of the debt distribution in 2014 is skewed right, where 
 
 <!--Chart 3-->
 ```{r chart 3}
-source("/source/Visualization3.R")
+source("Visualization3.R")
 knitr::opts_chunk$set(echo = TRUE)
 visual3
 ```
