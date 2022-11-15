@@ -14,7 +14,7 @@ month <- c("2020 11", "2020 10", "2020 09", "2020 08","2020 07", "2020 06", "202
 claimchart<- data.frame(month, claim_denied, claim_pending, claim_approved)
 
 #Creating a Line chart, with red being denied claims, green as approved and blue as pending.
-ggplot(data = claimchart, mapping = aes(x = month))+
+visual1 <- ggplot(data = claimchart, mapping = aes(x = month))+
   geom_line(data = claimchart, mapping = aes(x = month, y = claim_denied, group = 1), color="red")+
   geom_point(data = claimchart, mapping = aes(x = month, y = claim_denied, group = 1), color="red")+
   geom_line(data = claimchart, mapping = aes(x = month, y = claim_approved, group = 2), color="green")+
