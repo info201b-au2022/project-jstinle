@@ -16,10 +16,4 @@ Debt_Distr %>% ggplot(aes(x = Balance2014, y = NumberOfBorrowers))+
         x = "Debt Balance in 2014",
         y = "Number of Borrowers") +
   theme_minimal()
-=======
-visual1 <- barplot((Num_Borrow),
-                   names.arg = Group,
-                   title(main = "Debt Distribution in 2014",
-                         xlab = "Debt Balance in 2014",
-                         ylab = "Number of Borrowers"))
 >>>>>>> 523017b760607409e0eef2878f39e70fdfc328b9
