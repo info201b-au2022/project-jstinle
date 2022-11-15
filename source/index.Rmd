@@ -7,48 +7,55 @@ output: html_document
 
 ```{r setup, include=FALSE}
 source("AggregateTable.R")
+library(ggplot2)
 knitr::opts_chunk$set(echo = TRUE)
+source("SummaryInfo.R")
 ```
+
 <!--Dynamic Summary-->
-##Dynamic Summary 
-Write a summary paragraph that includes information calculated by your summary information function. 
 
-According to our summary information, the age group with the highest unpaid loans are borrowers between 30 and 50 years old with an average $38136.33 debt within our dataset populations. Of that population, 59% have a Bachelor's degree and 68% have graduate degrees. Borrowers under 30 years old follow closely with on average $23,924.46 of debt, with 60% having a Bachelor's degree and 73% with a graduate degree. 
+##Dynamic Summary
 
-Age groups 50 to 60 years and above 60 years old have approximately the same average outstanding debt balance with $40,600.07 and $20352.67 respectively, but have a significantly lower borrower population (both age groups combined being 57% of the 30 to 50 year group and 55% of the under 30 age group). 
+According to our summary information, the age group with the highest unpaid loans are borrowers between `r summary_info$max_num_loans_age` with an in total of `r summary_info$max_num_loans` within our dataset populations. The age group `r summary_info$min_num_loans_age` has the fewest amount of loans with `r summary_info$min_num_loans` highlighting a correlation of higher debts in borrowers within the lower and higher education average age range.
 
-Additionally, both age groups have a lower number of degrees, with the 50 to 60 year groups having 12% fewer bachelor degrees and 17% fewer graduate degrees than the under 30 age group and 11% and 12% fewer respectively than the 30 to 50 year group. Borrowers above 60 have even less with 31% and 37% fewer bachelor and graduate degrees than borrowers under 30 years old, and 30% and 32% fewer compared to age group 30 to 50 years.
+In the age group `r summary_info$max_num_borrowers_age`, there are `r summary_info$max_num_borrowers`, the highest proportion of borrowers relative to any other age groups. This highlights a greater amount of borrowers with in this age group, indicating a correlation between higher frequency in loans compared to other age groups.
 
-Relative to other age groups, those under 30 years old have a higher proportion of higher education degrees, and while their average balance is overall lower than any other age group, they have a higher rate of borrowing loans. 
+The highest amount of debt from borrowers `r summary_info$highest_bachelor_debt`is from the age group `r summary_info$highest_bachelor_debt_age`, showcasing that the population with the greatest amount of debt also correlates with the group with the greatest frequency of bachelor degrees. On the contrary the lowest outstanding debt `r summary_info$lowest_bachelor_debt` is from `r summary_info$lowest_bachelor_debt_age` age group indicating a there is less debt and borrowers relative to the `r summary_info$max_num_borrowers_age` age group.
 
-Age group above 60 years has the lowest amount of borrowers, overall unpaid debt, and bachelor or graduate degree holders but have the second highest average outstanding balance relative to other age groups. 
+<!-- Of that population, 59% have a Bachelor's degree and 68% have graduate degrees. Borrowers under 30 years old follow closely with on average \$23,924.46 of debt, with 60% having a Bachelor's degree and 73% with a graduate degree. -->
 
-The age group 50 to 60 years has the greatest average debt balance per borrower but have less than half the number of borrowers compared to age group 30 to 50 years or borrowers under 30 years old. 
+<!-- Age groups 50 to 60 years and above 60 years old have approximately the same average outstanding debt balance with \$40,600.07 and \$20352.67 respectively, but have a significantly lower borrower population (both age groups combined being 57% of the 30 to 50 year group and 55% of the under 30 age group). -->
 
+<!-- Additionally, both age groups have a lower number of degrees, with the 50 to 60 year groups having 12% fewer bachelor degrees and 17% fewer graduate degrees than the under 30 age group and 11% and 12% fewer respectively than the 30 to 50 year group. Borrowers above 60 have even less with 31% and 37% fewer bachelor and graduate degrees than borrowers under 30 years old, and 30% and 32% fewer compared to age group 30 to 50 years. -->
+
+<!-- Relative to other age groups, those under 30 years old have a higher proportion of higher education degrees, and while their average balance is overall lower than any other age group, they have a higher rate of borrowing loans. -->
+
+<!-- Age group above 60 years has the lowest amount of borrowers, overall unpaid debt, and bachelor or graduate degree holders but have the second highest average outstanding balance relative to other age groups. -->
+
+<!-- The age group 50 to 60 years has the greatest average debt balance per borrower but have less than half the number of borrowers compared to age group 30 to 50 years or borrowers under 30 years old. -->
 
 <!--Table-->
+
 ```{r table}
 aggregate_table
 ```
 
 <!--Chart 1-->
+
 ```{r chart 1}
 #source("Visualization1.R")
 knitr::opts_chunk$set(echo = TRUE)
 #Visual1
 ```
-Analysis: The histogram of the debt distribution in 2014 is skewed right, where most borrowers have less than $75,000 in debt. The range of debt that is owed by the most borrowers is between $10,000-$25,000, and few owe more than $200,000. The purpose of this chart is to observe which debt range is on average the most common, that can be used to estimate plausible loan relief and the distribution of forgiveness funds should be allocated to accomodate borrowers. 
+
+Analysis: The histogram of the debt distribution in 2014 is skewed right, where most borrowers have less than \$75,000 in debt. The range of debt that is owed by the most borrowers is between \$10,000-\$25,000, and few owe more than \$200,000. The purpose of this chart is to observe which debt range is on average the most common, that can be used to estimate plausible loan relief and the distribution of forgiveness funds should be allocated to accomodate borrowers.
 
 <!--Chart 2-->
+
 ```{r chart 2}
-
-```
-
-
-<!--Chart 3-->
-```{r chart 3}
 source("Visualization3.R")
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 visual3
 ```
-Analysis: The scatterplot for loans owed by borrowers under 24 years old by state shows most data points clustered around outstanding balances of 0.1 to 2.5 billion dollars. The state of California has the greatest amount of borrowers and highest rate of debt with 691,000 borrowers owing a total of ten billion dollars (on average $14,500 oustanding per borrower). The purpose of this chart is to analyze the debt of age groups that applies to the majority of students and gaining a more nuanced understanding of the debt across the United States. These data points showcases the intersectionality of the debt's geography, the amount of debt per state, and average age group within the  standard and higher education, which we can analyze a pattern of increased or decreased outstanding loans. 
+
+Analysis: The scatterplot for loans owed by borrowers under 24 years old by state shows most data points clustered around outstanding balances of 0.1 to 2.5 billion dollars. The state of California has the greatest amount of borrowers and highest rate of debt with 691,000 borrowers owing a total of ten billion dollars (on average \$14,500 oustanding per borrower). The purpose of this chart is to analyze the debt of age groups that applies to the majority of students and gaining a more nuanced understanding of the debt across the United States. These data points showcases the intersectionality of the debt's geography, the amount of debt per state, and average age group within the standard and higher education, which we can analyze a pattern of increased or decreased outstanding loans.
