@@ -41,8 +41,15 @@ chart1_sidebar_content <- sidebarPanel(
                           "62 and Higher" = "avg_balance_GE62"))
 )
 
+
 chart1_main_content <- mainPanel(
-  plotlyOutput("chart1")
+  plotlyOutput("chart1"),
+  p("This chart represents the average student loan balances for bororwers of
+    different age groups. Through this interactive visualization, you are able
+    to input different states across the United States and view information
+    on the average oustanding loans for a person living within that state. This
+    enables you to compare different generation's outstanding loan debt in
+    different states.")
 )
 
 chart1_panel <- tabPanel(

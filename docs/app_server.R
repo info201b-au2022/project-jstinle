@@ -26,7 +26,10 @@ server <- function(input, output) {
     
     p1 <- plot_ly(x = ages_to_show,
                  y = balances,
-                 type = "bar")
+                 type = "bar") %>%
+      layout(title ="Student Loan Balance per Person",
+             xaxis = list(title = "Age Range"),
+             yaxis = list(title = "Dollars"))
     
     return(p1)
   })
