@@ -4,10 +4,61 @@ library(dplyr)
 
 # -----------------------------------------------------------------------------
 # Michelle's Section
-# Summary + Chart1
+# Intro + Chart1
 # -----------------------------------------------------------------------------
 
-# Summary Page
+intro_main_content <- mainPanel(
+  img(src="https://tennesseelookout.com/wp-content/uploads/2022/12/student-loan-debt-forgiveness-demonstration-getty-700x467-1.jpeg",
+      height="80%", width="80%"),
+  p("text"),
+  
+  h3("Problem Domain"),
+  p("text"),
+  
+  h3("Research Questions"),
+  p("text"),
+  
+  h3("Analyzed Data"),
+  p("text"),
+  
+  h3("Key Findings"),
+  p("text")
+)
+
+intro_panel <- tabPanel(
+  "Introduction",
+  intro_main_content
+)
+
+# Chart Page
+chart1_sidebar_content <- sidebarPanel(
+  textInput("search", label = "Find a State", value = ""),
+  checkboxGroupInput("ages", label="Ages to Show:", 
+              choices = c("24 and Under"= "avg_balance_LE24", 
+                          "25 to 34" = "avg_balance_25_34", 
+                          "35 to 49" = "avg_balance_35_49", 
+                          "50 to 61" = "avg_balance_50_61", 
+                          "62 and Higher" = "avg_balance_GE62"))
+)
+
+chart1_main_content <- mainPanel(
+  plotlyOutput("chart1")
+)
+
+chart1_panel <- tabPanel(
+  "Average Student Loan Balance per Person",
+  titlePanel("Personal Student Loan Balances for Different Ages per State"),
+  sidebarLayout(
+    chart1_sidebar_content,
+    chart1_main_content
+  )
+)
+
+# -----------------------------------------------------------------------------
+# Justin's Section
+# Summary + Chart2
+# -----------------------------------------------------------------------------
+
 summary_main_content <- mainPanel(
   h3("Takeaway 1: Loans, Ages, and Locations"),
   p("chart1 stuff"),
@@ -25,39 +76,6 @@ summary_panel <- tabPanel(
   summary_main_content
 )
 
-# Chart Page
-chart1_sidebar_content <- sidebarPanel(
-  textInput("search", label = "Find a State", value = "Washington"),
-  checkboxGroupInput("ages", label="Ages to Show:", 
-              choices = c("24 and Under"= "avg_balance_LE24", 
-                          "25 to 34" = "avg_balance_25_34", 
-                          "35 to 49" = "avg_balance_35_49", 
-                          "50 to 61" = "avg_balance_50_61", 
-                          "62 and Higher" = "avg_balance_GE62"))
-)
-
-chart1_main_content <- mainPanel(
-  plotlyOutput("chart1"),
-  textOutput("sample"),
-  textOutput("sample_names")
-)
-
-chart1_panel <- tabPanel(
-  "Average Student Loan Balance per Person",
-  titlePanel("Personal Student Loan Balances for Different Ages per State"),
-  sidebarLayout(
-    chart1_sidebar_content,
-    chart1_main_content
-  )
-)
-
-# -----------------------------------------------------------------------------
-# Justin's Section
-# Intro + Chart2
-# -----------------------------------------------------------------------------
-intro_panel <- tabPanel(
-  "Introduction"
-)
 
 chart2_panel <- tabPanel(
   "chart 2 descriptor"

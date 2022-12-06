@@ -22,7 +22,7 @@ server <- function(input, output) {
     
     balances <- unlist(chart1_data[1,])
     balances <- balances[which(names(balances) %in% input$ages)]
-    names(balances) <- NULL
+    balances <- round(balances, digits = 2)
     
     p1 <- plot_ly(x = ages_to_show,
                  y = balances,
@@ -30,8 +30,6 @@ server <- function(input, output) {
     
     return(p1)
   })
-  output$sample <- renderText({input$ages})
-  output$sample_names <- renderText({names(input$ages)})
 }
 
 
