@@ -7,18 +7,37 @@ library(dplyr)
 # Summary + Chart1
 # -----------------------------------------------------------------------------
 
+# Summary Page
+summary_main_content <- mainPanel(
+  h3("Takeaway 1: Loans, Ages, and Locations"),
+  p("chart1 stuff"),
+  
+  h3("Takeaway 2: Student Loans vs Other Loans"),
+  p("chart2 stuff"),
+  
+  h3("Takeaway 3: Ages and Degrees with loans"),
+  p("chart3 stuff"),
+)
+
 summary_panel <- tabPanel(
   "Summary",
-  titlePanel("Takeaways: Loans & Debt Per Generation, Types, and Degrees")
+  titlePanel("Takeaways: Loans & Debt Per Generation, Types, and Degrees"),
+  summary_main_content
+)
+
+# Chart Page
+chart1_sidebar_content <- sidebarPanel(
+  textInput("search", label = "Find a State", value = "Washington"),
+  checkboxGroupInput("ages", label="Ages to Show:", 
+              choices = c("24 and Under"= "avg_balance_LE24", 
+                          "25 to 34" = "avg_balance_25_34", 
+                          "35 to 49" = "avg_balance_35_49", 
+                          "50 to 61" ="avg_balance_50_61 ", 
+                          "62 and Higher" = "avg_balance_GE62"))
 )
 
 chart1_main_content <- mainPanel(
-  p("placeholder for main panel")
-)
-chart1_sidebar_content <- sidebarPanel(
-  textInput("search", label = "Find a State", value = ""),
-  checkboxGroupInput("ages", label="Ages to Show:", 
-              choices = c("24 and Under", "25 to 34", "35 to 49", "50 to 61", "62 and Higher"))
+  plotlyOutput("chart1")
 )
 
 chart1_panel <- tabPanel(
