@@ -7,6 +7,7 @@ library(dplyr)
 # Intro + Chart1
 # -----------------------------------------------------------------------------
 
+# Intro Page Code
 intro_main_content <- mainPanel(
   img(src="https://tennesseelookout.com/wp-content/uploads/2022/12/student-loan-debt-forgiveness-demonstration-getty-700x467-1.jpeg",
       height="80%", width="80%"),
@@ -30,7 +31,8 @@ intro_panel <- tabPanel(
   intro_main_content
 )
 
-# Chart Page
+
+# Chart Page Code
 chart1_sidebar_content <- sidebarPanel(
   textInput("search", label = "Find a State", value = "National"),
   checkboxGroupInput("ages", label="Ages to Show:", 
@@ -45,7 +47,6 @@ chart1_sidebar_content <- sidebarPanel(
                            "avg_balance_50_61",
                            "avg_balance_GE62"))
 )
-
 
 chart1_main_content <- mainPanel(
   plotlyOutput("chart1"),
