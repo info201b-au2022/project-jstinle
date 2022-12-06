@@ -1,3 +1,7 @@
+library(shiny)
+library(plotly)
+library(dplyr)
+
 # -----------------------------------------------------------------------------
 # Michelle's Section
 # Summary + Chart1
@@ -12,12 +16,14 @@ chart1_main_content <- mainPanel(
   p("placeholder for main panel")
 )
 chart1_sidebar_content <- sidebarPanel(
-  p("placeholder for sidebar panel")
+  textInput("search", label = "Find a State", value = ""),
+  checkboxGroupInput("ages", label="Ages to Show:", 
+              choices = c("24 and Under", "25 to 34", "35 to 49", "50 to 61", "62 and Higher"))
 )
 
 chart1_panel <- tabPanel(
-  "chart 1 descriptor",
-  titlePanel("chart 1 title"),
+  "Average Student Loan Balance per Person",
+  titlePanel("Personal Student Loan Balances for Different Ages per State"),
   sidebarLayout(
     chart1_sidebar_content,
     chart1_main_content
@@ -29,13 +35,11 @@ chart1_panel <- tabPanel(
 # Intro + Chart2
 # -----------------------------------------------------------------------------
 intro_panel <- tabPanel(
-  "Introduction",
-  titlePanel("introduction titlea")
+  "Introduction"
 )
 
 chart2_panel <- tabPanel(
-  "chart 2 descriptor",
-  titlePanel("chart 2 title")
+  "chart 2 descriptor"
 )
 
 
@@ -49,8 +53,7 @@ report_panel <- tabPanel(
 )
 
 chart3_panel <- tabPanel(
-  "chart 3 descriptor",
-  titlePanel("chart 3 title")
+  "chart 3 descriptor"
 )
 
 
