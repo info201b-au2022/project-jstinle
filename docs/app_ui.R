@@ -32,12 +32,14 @@ chart1_sidebar_content <- sidebarPanel(
               choices = c("24 and Under"= "avg_balance_LE24", 
                           "25 to 34" = "avg_balance_25_34", 
                           "35 to 49" = "avg_balance_35_49", 
-                          "50 to 61" ="avg_balance_50_61 ", 
+                          "50 to 61" = "avg_balance_50_61", 
                           "62 and Higher" = "avg_balance_GE62"))
 )
 
 chart1_main_content <- mainPanel(
-  plotlyOutput("chart1")
+  plotlyOutput("chart1"),
+  textOutput("sample"),
+  textOutput("sample_names")
 )
 
 chart1_panel <- tabPanel(
