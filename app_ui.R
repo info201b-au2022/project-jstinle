@@ -129,12 +129,33 @@ chart2_panel <- tabPanel(
 # # -----------------------------------------------------------------------------
 report_panel <- tabPanel(
   "Report",
-  titlePanel("Student Loan Problem Report")
+  titlePanel("report title")
 )
-# 
+
+chart3_main_content <- mainPanel(
+  plotlyOutput("chart3"),
+  p(" ")
+  
+)
+chart3_sidebar_content <- sidebarPanel(
+  selectInput("degree", label = "Degrees to show:",
+                     choices = c("bachelor_percentage",
+                                 "Associate's Degree",
+                                 "Certificate's Degree",
+                                 "Graduate's Degree"),
+                     selected = TRUE
+  )
+) 
+
 chart3_panel <- tabPanel(
-  "chart 3 descriptor"
+  "Average debt by Degree type and Age",
+  titlePanel("Educational Debt by Age group and Degree Type"),
+  sidebarLayout(
+    chart3_sidebar_content,
+    chart3_main_content
+  )
 )
+
 # 
 # 
 # # -----------------------------------------------------------------------------

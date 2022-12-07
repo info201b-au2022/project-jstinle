@@ -14,6 +14,16 @@ loan_balances_byage <- read.csv("data/Student_Loan_Balances_by_Age_by_State.csv"
 #Loading/Editing Data 2
 loan_balance_bytype <- read.csv("data/non_mort_balance.csv", stringsAsFactors = FALSE)
 
+#Loading/Editing Data 3
+ages <- c("18-29", "30-44", "45-59", "60+")
+bachelor_percentage <- c("60", "59", "48", "29")
+graduate_percentage <- c("73", "68", "56", "36")
+associate_percentage <- c("48", "54", "41", "17")
+certificate_percentage <- c("43","40", "25","9" )
+
+percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage, associate_percentage, certificate_percentage)
+# View(percentage_debt)
+
 server <- function(input, output) {
   # chart 1 plot
   output$chart1 <- renderPlotly({
@@ -53,7 +63,21 @@ server <- function(input, output) {
       labs(title = "Quarterly Loan Balance in the United States by Type 2004-2014"
       )
     return(plot_data)
+  }) 
+  
+  #chart 3 plot
+  # percentage_debt <- percentage_debt%>%
+  #   rename(
+  #     "Bachelor's Degree" = bachelor_percentage
+  #   )
+  
+  output$chart3 <- renderPlotly({
+   p3 <- plot_ly(percentage_debt,
+                 x = ages,
+                 y= "Bachelor's Degree" , 
+                 type = "bar")
   })
+  
 }
 
 
