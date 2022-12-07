@@ -73,13 +73,17 @@ chart1_panel <- tabPanel(
 # -----------------------------------------------------------------------------
 
 summary_main_content <- mainPanel(
-  h3("Takeaway 1: Loans, Ages, and Locations"),
-  p("chart1 stuff"),
+  h3(em("Takeaway 1: Loans, Ages, and Locations")),
+  p("From Chart 1, a huge takeaway that can be understood from the National level data is that loans can last for a detrimental period of time.
+  For example, we see the average loan amount reach its peak of $43k on average for those aged 35-49; 
+  however, as time passes this average only decreases to $40.2k for those ages 62 and older. 
+  This is a key problem that we must note from this chart because as a society we should be wondering why this average is still so high despite those being at such an old age. 
+  It is also important to note that despite whatever state it is, this sighting still applies where even at old age there is a significant amount of student debt that remains."),
   
-  h3("Takeaway 2: Student Loans vs Other Loans"),
+  h3(em("Takeaway 2: Student Loans vs Other Loans")),
   p("chart2 stuff"),
   
-  h3("Takeaway 3: Ages and Degrees with loans"),
+  h3(em("Takeaway 3: Ages and Degrees with loans")),
   p("chart3 stuff"),
 )
 
@@ -89,9 +93,26 @@ summary_panel <- tabPanel(
   summary_main_content
 )
 
+chart2_sidebar_content <- sidebarPanel(
+  selectInput(inputId = "y_axis",
+              label = "Selection of HELOC, Auto Loan, Credi Card, Student Loan, Other",
+              choices = list("HELOC"= "HELOC", "Auto Loan" = "Auto.Loan", "Credit Card" = "Credit.Card", "Student Loan" = 
+                               "Student.Loan", "Other Loans" = "Other"),
+              selected = "Student Loan")
+)
+
+chart2_main_content <- mainPanel(
+  plotlyOutput("chart2"),
+  p("This chart visualizes the quarterly amount of loan balances for Americans by type in BILLIONS of dollars. 
+  With this interactive visualization, you are able
+    to input a variety of loan types in the United States and view data
+    on the total amount of loans by that selected type. This allows you to compare and see the differences between the amounts of loans.")
+)
 
 chart2_panel <- tabPanel(
-  "chart 2 descriptor"
+  "Loan Amount By Type",
+  chart2_sidebar_content,
+  chart2_main_content
 )
 
 
@@ -113,6 +134,7 @@ chart3_panel <- tabPanel(
 # Create UI
 # -----------------------------------------------------------------------------
 ui <- navbarPage(
+  theme = shinytheme("simplex"),
   "Student Loan Debt: The Growing Trillion-Dollar Crisis",
   intro_panel,
   chart1_panel,
