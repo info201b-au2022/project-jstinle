@@ -1,0 +1,14 @@
+name: Student-Loans
+title: Student-Loans
+username:
+account: jstinle
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7836531
+bundleId: 6604121
+url: https://jstinle.shinyapps.io/Student-Loans/
+when: 1670410624.77342
+lastSyncTime: 1670410624.77343
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|hello.html|index.html|index.Rmd|p01-proposal.md|README.md
