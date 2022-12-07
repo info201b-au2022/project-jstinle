@@ -4,15 +4,15 @@
 #library(tidyr)
 #library(dplyr)
 #library(shinythemes)
-#library(plotly)
+library(plotly)
 
 #Loading/Editing Data 1 
-loan_balances_byage <- read.csv("../data/Student_Loan_Balances_by_Age_by_State.csv", stringsAsFactors = FALSE) %>%
+loan_balances_byage <- read.csv("data/Student_Loan_Balances_by_Age_by_State.csv", stringsAsFactors = FALSE) %>%
   select(Location, avg_balance_LE24,	avg_balance_25_34,	avg_balance_35_49,	avg_balance_50_61,	avg_balance_GE62) %>%
   summarise(Location = c(Location, "National"),
             across(where(is.numeric), ~ c(., mean(.))))
 #Loading/Editing Data 2
-loan_balance_bytype <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-jstinle/main/data/non_mort_balance.csv", stringsAsFactors = FALSE)
+loan_balance_bytype <- read.csv("data/non_mort_balance.csv", stringsAsFactors = FALSE)
 
 server <- function(input, output) {
   # chart 1 plot
