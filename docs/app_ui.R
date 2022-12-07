@@ -81,7 +81,12 @@ summary_main_content <- mainPanel(
   It is also important to note that despite whatever state it is, this sighting still applies where even at old age there is a significant amount of student debt that remains."),
   
   h3(em("Takeaway 2: Student Loans vs Other Loans")),
-  p("chart2 stuff"),
+  p("After looking at Chart 2, what can be determined is that student loans have exponentially increased over time compared to other types of loans and continue to skyrocket to unimaginable amounts,
+  setting records every year. For example, in March of 2004 total student loans were just 260 billion dollars in total, while the total in March of 2014 has surpassed 1 trillion dollars. 
+  This data is vital to note because no other type of loan has exponentially increased and continues to increase as student loans which shows how big of a problem this is. 
+  Other large amount of loans such as auto loans have always been absurd amounts and it slowly increases unlike student loans which is why it is not something to be as worried about as student loans. 
+
+ "),
   
   h3(em("Takeaway 3: Ages and Degrees with loans")),
   p("chart3 stuff"),
