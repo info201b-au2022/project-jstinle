@@ -195,6 +195,7 @@ report_panel <- tabPanel(
   h3("The Dataset: Data.world Student Loan Debts"),
   p("This dataset specifically targets different levels of and prevalence of borrowers of student loans per different groups such as loans per age group or frequency by levels of debt. This will help us understand if age plays a role in the repayment of loans, how long this problem has prevailed, and the effect of student debt on other personal economic situations. 
   High-ranking members (vice presidents, administrators, research officers, and economists) of the Federal Reserve Bank of New York’s Research and Statistics Group conducted the research due to the, at the time, increased attention by policymakers and the media. The data collected was taken from the bank’s Consumer Credit Panel and anonymized Equifax credit data; so it follows that it is sponsored by their respective corporations. Since this data was recorded and analyzed directly by affiliate banks, it is safe to assume that the data is secure, credible, and trustworthy. We obtained the data through the google dataset search and credited Data.world, the website that makes the datasets accessible."),
+  tableOutput('report_table1'),
   p("*LINK:* [Data.world Student Loan Debt](https://data.world/finance/student-loan-debt
 ) (full citation in references))"),
   h3("Dataset 2: Statista Student Loan Forgiveness"),

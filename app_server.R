@@ -2,7 +2,7 @@
 #library(ggplot2)
 #library(shiny)
 #library(tidyr)
-#library(dplyr)
+library(dplyr)
 #library(shinythemes)
 library(plotly)
 
@@ -20,6 +20,18 @@ bachelor_percentage <- c("60", "59", "48", "29")
 graduate_percentage <- c("73", "68", "56", "36")
 associate_percentage <- c("48", "54", "41", "17")
 certificate_percentage <- c("43","40", "25","9" )
+
+#creating data frames for report
+name1 <- c("Balance By Age", " Debt Amount Distribution", "Home Secured Debt Age 30", "Non-Mortgage Debt Types")
+num_rows1 <- c(11, 9, 12, 44)
+num_cols1 <- c(7, 2, 4, 6)
+
+table1 <- data.frame(name1, num_rows1, num_cols1) %>%
+  rename("File Name" =  "name1",
+         "Number of Rows" = "num_rows1",
+         "Number of Columns" = "num_cols1") %>%
+  mutate(across(where(is.numeric), trunc))
+
 
 percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage, associate_percentage, certificate_percentage)
 # View(percentage_debt)
@@ -77,7 +89,9 @@ server <- function(input, output) {
                  y = get(input$degree), 
                  type = "bar")
   })
-  
+ 
+  output$report_table1 <- renderTable(table1)
+   
 }
 
 
