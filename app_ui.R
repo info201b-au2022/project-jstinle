@@ -137,13 +137,17 @@ chart3_main_content <- mainPanel(
   p(" ")
   
 )
+
+# Shiina's Changes:
+# I reverted your choices vector and added an "inputId = " for clairty.
 chart3_sidebar_content <- sidebarPanel(
-  selectInput("degree", label = "Degrees to show:",
-                     choices = c("bachelor_percentage",
-                                 "Associate's Degree",
-                                 "Certificate's Degree",
-                                 "Graduate's Degree"),
-                     selected = TRUE
+  selectInput(inputId = "degree",
+              label = "Degrees to show:",
+              choices = c("Bachelor's Degree" = "bachelor_percentage",
+                          "Associate's Degree" = "associate_percentage", 
+                          "Certificate's Degree" = "certificate_percentage",
+                          "Graduate's Degree" = "graduate_percentage"),
+              selected = TRUE
   )
 ) 
 

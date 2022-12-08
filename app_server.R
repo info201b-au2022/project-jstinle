@@ -66,15 +66,15 @@ server <- function(input, output) {
   }) 
   
   #chart 3 plot
-  # percentage_debt <- percentage_debt%>%
-  #   rename(
-  #     "Bachelor's Degree" = bachelor_percentage
-  #   )
   
+  # Shiina's Changes:
+  # It was taking the input as a string, not as a column name, hence the get() function
+  # Good luck with the rest of the porject ! It's looking really good so far
+
   output$chart3 <- renderPlotly({
    p3 <- plot_ly(percentage_debt,
                  x = ages,
-                 y= "Bachelor's Degree" , 
+                 y = get(input$degree), 
                  type = "bar")
   })
   
