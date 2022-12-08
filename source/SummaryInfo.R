@@ -11,8 +11,10 @@ loan_forgiveness <- data.frame(approved, denied, pending)
 ages <- c("18-29", "30-44", "45-59", "60+")
 bachelor_percentage <- c("60", "59", "48", "29")
 graduate_percentage <- c("73", "68", "56", "36")
+associate_percentage <- c("48", "54", "41", "17")
+certificate_percentage <- c("43","40", "25","9" )
 
-percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage)
+percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage, associate_percentage, certificate_percentage)
 View(percentage_debt)
 
 balances <- read.csv("../data/Student_Loan_Balances_by_Age_by_State.csv")
