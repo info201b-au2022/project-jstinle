@@ -12,19 +12,47 @@ library(plotly)
 intro_main_content <- mainPanel(
   img(src="https://tennesseelookout.com/wp-content/uploads/2022/12/student-loan-debt-forgiveness-demonstration-getty-700x467-1.jpeg",
       height="80%", width="80%"),
-  p("text"),
 
   h3("Problem Domain"),
-  p("text"),
+  p("Student debt has only risen in the recent years; and although the government 
+    had tried various ways to relive debt, more and more people take on loans leading 
+    to trillions of dollars of student debt in the United States. The loaning system 
+    generates a system that leads to students paying off their original loan many times 
+    over yet their debt continues to climb, while the governmental solutions are only a 
+    bandaid on the ever growing pile of student debt. Direct stakeholder-wise, current 
+    borrowers are affected by high interest rates; while private lenders as indirect 
+    stakeholders are enabled to exploit borrowers for profit. There are many debt 
+    relief programs—both private and federal—that attempt to help, however due to the 
+    confusing and unfair relief systems has also done additional harm. Student debt 
+    reductions allow borrowers offer slight relief to increasing and compounding balance; 
+    further benefitting people in need in an accessible and digitized way. However, this 
+    harms people with higher post-grad incomes but immense debt whose incomes eliminates 
+    them from consideration of student loan relief; while their incomes may not match 
+    their outstanding debt."),
 
   h3("Research Questions"),
-  p("text"),
+  p("What factors make it so difficult for students to repay their student loans?"),
+  p("What advantages and disadvantages would the economy and government have given the 
+    option to eliminate all student loan debt?"),
+  p("Will the problem of student debt ever be resolved and how?"),
 
   h3("Analyzed Data"),
-  p("text"),
+  p("We analyzed Data.word’s datasets regarding debt balances by age, debt amount 
+    distribution frequency, home ownership rates with and without loans, and non-mortage 
+    debt types. We also analyzed various student loan statistics from the Education Data 
+    Initiative including loan forgiveness acceptance rates and debt percentages for different 
+    degree types. Lastly, we analyzed student loan borrowers, outstanding debt, and balances 
+    for different age ranges and states."),
 
   h3("Key Findings"),
-  p("text")
+  p("Repaying student loans takes a long time. Most likely due to detrimental 
+    compounding interest, loan debt is highest not during people's  young adult years,
+    but at early-middle aged years; with, on avergae, slight decreases in debt after 
+    peaking."),
+  p("Student loans by far outrank other non-mortage type loans in terms of the amount of
+    outstanding debt. This has gone up exponentially, especially in the past few years."),
+  p("Additional schooling correlates with higher student debt, which is reasonable. However,
+    this debt continues to last for up to decades after schooling is over.")
 )
 
 intro_panel <- tabPanel(
