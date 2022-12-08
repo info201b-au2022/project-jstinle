@@ -16,10 +16,10 @@ loan_balance_bytype <- read.csv("data/non_mort_balance.csv", stringsAsFactors = 
 
 #Loading/Editing Data 3
 ages <- c("18-29", "30-44", "45-59", "60+")
-bachelor_percentage <- c("60", "59", "48", "29")
-graduate_percentage <- c("73", "68", "56", "36")
-associate_percentage <- c("48", "54", "41", "17")
-certificate_percentage <- c("43","40", "25","9" )
+bachelor_percentage <- c(60,59,48,29)
+graduate_percentage <- c(73,68,56,36)
+associate_percentage <- c(48,54,41,17)
+certificate_percentage <- c(43,40,25,9)
 
 #creating data frames for report
 name1 <- c("Balance By Age", " Debt Amount Distribution", "Home Secured Debt Age 30", "Non-Mortgage Debt Types")
