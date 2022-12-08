@@ -166,9 +166,10 @@ report_panel <- tabPanel(
   h3("Project Title"),
   p("Student Loan Debt: The Growing Tillion-Dollar Crisis"),
   h3("Authors"),
-  p("Michelle Arquiza | marquiza@uw.edu
-    Justin Le | jxle@uw.edu
-    Karina Chan | karinac@uw.edu"),
+  p("Michelle Arquiza | marquiza@uw.edu"),
+  p("Justin Le | jxle@uw.edu"),
+  p("Karina Chan | karinac@uw.edu"),
+  
   h3("Affiliation"),
   p("INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"),
   h3("Date"),
