@@ -90,7 +90,10 @@ summary_main_content <- mainPanel(
  "),
 
   h3(em("Takeaway 3: Ages and Degrees with loans")),
-  p("chart3 stuff"),
+  p("Once interacting with Chart 3 you will discover that the higher the degree obtained the more people that have that degree will have debt and this is expected to occur since they usually cost a lot more to obtain. 
+  However, a key takeaway is the duration of this debt by age group, we can see that this debt slowly decreases but for most people this amount will last decades despite the degree type. 
+    This is a problem in the United States that should be looked at more closely because it draws people away from pursuing higher education since pursuing a graduate degree can mean paying 
+    off your debt for the rest of your life and possibly never even paying it off. "),
 )
 
 summary_panel <- tabPanel(
