@@ -27,11 +27,32 @@ num_rows1 <- c(11, 9, 12, 44)
 num_cols1 <- c(7, 2, 4, 6)
 
 table1 <- data.frame(name1, num_rows1, num_cols1) %>%
-  rename("File Name" =  "name1",
+  rename("Data.world Student Loan Debts" =  "name1",
          "Number of Rows" = "num_rows1",
          "Number of Columns" = "num_cols1") %>%
   mutate(across(where(is.numeric), trunc))
 
+#data frame 2
+name2 <- c("PSLF Progress (Since Nov. 30, 2020)", "PSLF Progress (Prior to Nov. 30, 2020)", "TEPSLF Progress (Prior to Nov. 30, 2020", "ED’s Borrower Defense Progress")
+num_rows2 <- c(3, 15, 8, 19)
+num_cols2 <- c(3, 3, 2, 3)
+
+table2 <- data.frame(name2, num_rows2, num_cols2) %>%
+  rename("Statista Student Loan Forgiveness" =  "name2",
+         "Number of Rows" = "num_rows2",
+         "Number of Columns" = "num_cols2") %>%
+  mutate(across(where(is.numeric), trunc))
+
+#data frame 3
+name3 <- c("Student Loan Balances by Age by State", "PortfoliobyBorrowerLocationAge")
+num_rows3 <- c(52, 15)
+num_cols3 <- c(15, 3)
+
+table3 <- data.frame(name3, num_rows3, num_cols3) %>%
+  rename("Kaggle Student Loan Averages" =  "name3",
+         "Number of Rows" = "num_rows3",
+         "Number of Columns" = "num_cols3") %>%
+  mutate(across(where(is.numeric), trunc))
 
 percentage_debt <- data.frame(ages, bachelor_percentage, graduate_percentage, associate_percentage, certificate_percentage)
 # View(percentage_debt)
@@ -91,6 +112,8 @@ server <- function(input, output) {
   })
  
   output$report_table1 <- renderTable(table1)
+  output$report_table2 <- renderTable(table2)
+  output$report_table3 <- renderTable(table3)
    
 }
 
