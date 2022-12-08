@@ -268,8 +268,8 @@ chart3_sidebar_content <- sidebarPanel(
 ) 
 
 chart3_panel <- tabPanel(
-  "Average debt by Degree type and Age",
-  titlePanel("Educational Debt by Age group and Degree Type"),
+  "Average Debt by Degree Type and Age",
+  titlePanel("Educational Debt by Age Group and Degree Type"),
   sidebarLayout(
     chart3_sidebar_content,
     chart3_main_content

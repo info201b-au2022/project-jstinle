@@ -33,9 +33,9 @@ table1 <- data.frame(name1, num_rows1, num_cols1) %>%
   mutate(across(where(is.numeric), trunc))
 
 #data frame 2
-name2 <- c("PSLF Progress (Since Nov. 30, 2020)", "PSLF Progress (Prior to Nov. 30, 2020)", "TEPSLF Progress (Prior to Nov. 30, 2020", "ED’s Borrower Defense Progress")
-num_rows2 <- c(3, 15, 8, 19)
-num_cols2 <- c(3, 3, 2, 3)
+name2 <- c("PSLF Progress (Since Nov. 30, 2020)", "PSLF Progress (Prior to Nov. 30, 2020)", "TEPSLF Progress (Prior to Nov. 30, 2020", "ED’s Borrower Defense Progress", "Educational Debt Among Post-Secondary-Educated-Adults")
+num_rows2 <- c(3, 15, 8, 19, 5)
+num_cols2 <- c(3, 3, 2, 3, 4)
 
 table2 <- data.frame(name2, num_rows2, num_cols2) %>%
   rename("Statista Student Loan Forgiveness" =  "name2",
@@ -44,7 +44,7 @@ table2 <- data.frame(name2, num_rows2, num_cols2) %>%
   mutate(across(where(is.numeric), trunc))
 
 #data frame 3
-name3 <- c("Student Loan Balances by Age by State", "PortfoliobyBorrowerLocationAge")
+name3 <- c("Student Loan Balances by Age by State", "Portfolio By Borrower Location Age")
 num_rows3 <- c(52, 15)
 num_cols3 <- c(15, 3)
 
