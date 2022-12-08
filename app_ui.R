@@ -123,10 +123,10 @@ summary_main_content <- mainPanel(
 <<<<<<< HEAD
     This is a problem in the United States that should be looked at more closely because it draws people away from pursuing higher education since pursuing a graduate degree can mean paying 
     off your debt for the rest of your life and possibly never even paying it off. "),
-=======
-  This is a problem in the United States that should be looked at more closely because it draws people away from pursuing higher education since pursuing a graduate degree can mean paying 
-    off your debt for the rest of your life and possibly never even paying it off."),
->>>>>>> 0b32847ba49a73869f303fd5dd7e20314a890727
+# =======
+  # This is a problem in the United States that should be looked at more closely because it draws people away from pursuing higher education since pursuing a graduate degree can mean paying 
+  #   off your debt for the rest of your life and possibly never even paying it off."),
+# >>>>>>> 0b32847ba49a73869f303fd5dd7e20314a890727
 )
 
 summary_panel <- tabPanel(

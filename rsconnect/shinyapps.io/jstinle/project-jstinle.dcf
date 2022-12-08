@@ -5,9 +5,9 @@ account: jstinle
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7841883
-bundleId: 6607413
+bundleId: 6610454
 url: https://jstinle.shinyapps.io/project-jstinle/
-when: 1670452310.02864
-lastSyncTime: 1670452310.02865
+when: 1670505948.53226
+lastSyncTime: 1670505948.5323
 asMultiple: FALSE
 asStatic: FALSE
